@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# Redirection
+apt-get -y update
+apt-get -y install nginx
+echo "Hello World!" > /var/www/html/index.nginx-debian.html
+sudo service nginx start
+llo="\\\trewrite ^/redirect_me https://github.com/matthiasVincent permanent;"
+sudo sed -i "42i $llo" /etc/nginx/sites-available/default
+sudo service nginx restart
