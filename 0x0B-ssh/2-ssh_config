@@ -3,5 +3,5 @@ Host *
     HashKnownHosts yes
     GSSAPIAuthentication yes
     GSSAPIDelegateCredentials no
-    IdentityFile ~/.ssh/holberton
+    IdentityFile ~/.ssh/school
     PasswordAuthentication no
