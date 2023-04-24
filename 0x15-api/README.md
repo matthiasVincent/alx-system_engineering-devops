@@ -1,0 +1,2 @@
+## Gather data from an APIThis project examines the concept of API (Application Programming Interface) which allows two different applications to communicate with each other. REST API, a web API which allows different web applications to communicate with each other is a popular API available. The project extracts data from RESFUL API, jsonplaceholder which is a public API to test projects. A request was made to the API at https://jsonplaceholder.typicode.com/ using request package to extracts data.
+
