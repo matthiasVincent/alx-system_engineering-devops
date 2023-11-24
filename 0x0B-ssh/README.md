@@ -4,7 +4,7 @@ Basically, secure shell protocol ensures that communication between a local/remo
 The public key as the name indicate is what the client can share with any remote server for communication whereas the private key is exclusive to the client. It is a client-server protocol.
 Server runs SSH daemon while client runs SSH client. Depending on the scenario, a remote server can also act as a client.
 
-##Tasks
+## Tasks
 
 * **[ 0. use a private key](./0-use_a_private_key)**
 Bash script that uses SSH to connect to a remote server using the private key in the file `~/.ssh/school` with the user `ubuntu`.
