@@ -6,23 +6,20 @@ Server runs SSH daemon while client runs SSH client. Depending on the scenario, 
 
 ##Tasks
 
-* 0. **[use a private key](./0-use_a_private_key)**
+* **[ 0. use a private key](./0-use_a_private_key)**
 Bash script that uses SSH to connect to a remote server using the private key in the file `~/.ssh/school` with the user `ubuntu`.
 
-* 1. **[create an SSH key pair](./1-create_ssh_key_pair)**
+* **[ 1. create an SSH key pair](./1-create_ssh_key_pair)**
 Bash script that creates an RSA key pair with requirements:
 	* `school` as name of created private key
 	* number of bits `4096`
 	* key protected by the passphrase `betty`.
 	
-* 2.  **[client configuration file](./2-ssh_config)**
+* **[ 2. client configuration file](./2-ssh_config)**
 An answer file containing script that enables connection to a remote server without typing a password.
 requirements:
 	* use private key on the path `~/.ssh/school
-	* refuse password based authentication.
-	
-*3.  **[let me in]**
-configure a given server to allow a given public key to use ssh based authentication using the user with name `ubuntu`.
+	* refuse password based authentication
 
-* 4. **[client configuration file (w/puppet)](./100-puppet_ssh_config.pp)**
+* **[ 4. client configuration file (w/puppet)](./100-puppet_ssh_config.pp)**
 implement the tasks outlined in [this task](./2-ssh_config) using puppet configuration management tool.
