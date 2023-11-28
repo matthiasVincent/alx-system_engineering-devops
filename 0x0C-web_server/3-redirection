@@ -21,9 +21,11 @@ printf %s "server {
      root        /etc/nginx/html;
      index       index.html index.htm;
 
+     rewrite  ^/redirect_me https://github.com permanent;
+
      #location  /redirect_me {
-     	return 301 https://github.com/matthiasVincent;
-}
+     	#return 301 https://github.com/matthiasVincent;
+#}
 }
 " > /etc/nginx/sites-available/new
 
