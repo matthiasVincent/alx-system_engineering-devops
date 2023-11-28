@@ -26,10 +26,12 @@ printf %s "server {
 
      error_page  404 /404.html;
 
-     location  /redirect_me {
-     	return 301 https://github.com/matthiasVincent;
-}
-     location /404 {
+     rewrite  ^/redirect_me https://github.com/matthiasVincent permanent;
+
+     #location  /redirect_me {
+     	#return 301 https://github.com/matthiasVincent;
+#}
+location = /404.html {
         root /etc/nginx/html;
 	internal;
 }
