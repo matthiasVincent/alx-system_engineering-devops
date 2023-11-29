@@ -7,16 +7,18 @@
 sudo apt-get -y update
 sudo apt-get install -y nginx
 
-mkdir /etc/nginx/html
-touch /etc/nginx/html/index.html
-touch /etc/nginx/html/404.html
-echo "Hello World!" > /etc/nginx/html/index.html
-echo "Ceci n'est pas une page" >/etc/nginx/html/404.html
+mkdir /var/www
+mkdir /var/www/html
+chmod -R 755 /var/www
+touch /var/www/html/index.html
+touch /var/www/html/404.html
+echo "Hello World!" > /var/www/html/index.html
+echo "Ceci n'est pas une page" >/var/www/html/404.html
 printf %s "server {
      listen      80 default_server;
      listen      [::]:80 default_server;
-     root        /etc/nginx/html;
-     index       index.html index.htm;
+     root        /var/www/html;
+     index       index.html index.htm index.nginx-debian.html;
 
      location   / {
            try_files  \$uri \$uri/ =404;
