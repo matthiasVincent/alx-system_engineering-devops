@@ -8,6 +8,5 @@ This is a project where we were instructed to write article on the above topic. 
 * Load Balancer(HAProxy)
 * LAMP stack
 
-You can read the overly summarized article(due to character restriction) on my LinkedIn [here]
-
-Also you can view the schematic diagram with detailed explanation [here]
+You can read the overly summarized article(due to character restriction) on my LinkedIn [here](https://www.linkedin.com/posts/matthias-sunday-oduh-4a364122b_introduction-dns-tcp-activity-7053358387018838016-9Pqx)
+Also you can view the schematic diagram with detailed explanation [here](https://imgur.com/J9oD557)
