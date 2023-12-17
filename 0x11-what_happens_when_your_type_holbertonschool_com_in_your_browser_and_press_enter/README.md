@@ -1,16 +1,13 @@
-# What happens when you type holbertonschool.com in your browser and press Enter
+## What happen when you type https://www.google.com into a web browser and press the enter key
+This is a project where we were instructed to write article on the above topic. The article covers the following:
+* Address typing on a web browser tab(OS abstraction)
+* Address Resolution Protocol(ARP) using Domain Name Server(DNS)
+* HTTP/HTTPS
+* TCP/IP
+* TLS/SSL
+* Load Balancer(HAProxy)
+* LAMP stack
 
-Reviewing and encapsulating networking knowledge and skills I had been learning
-and practicing over the last month, in this project, I wrote a blog post
-answering the classic interview question - what happens when you enter [generic
-website] into a browser and hit `Enter`?
+You can read the overly summarized article(due to character restriction) on my LinkedIn [here]
 
-## Tasks :page_with_curl:
-
-* **0. What happens when...**
-  * [0-blog_post](./0-blog_post): Text file containing the link to my blog post.
-
-* **1. Everything's better with a pretty diagram**
-  * [1-what_happen_when_diagram](./1-what_happen_when_diagram): Text file
-  containing the link to a diagram put togeter to visualize the networking
-  process described in my blog.
+Also you can view the schematic diagram with detailed explanation [here]
