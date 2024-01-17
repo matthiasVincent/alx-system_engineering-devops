@@ -14,7 +14,10 @@ def number_of_subscribers(subreddit):
             'username': 'matthiasVinco',
             'password': 'Matthias@28908'
             }
-    response = requests.get(url, data=data, headers=headers, allow_redirects=False)
+    response = requests.get(
+            url, data=data,
+            headers=headers, allow_redirects=False
+            )
     if response.status_code == 404:
         return 0
     results = response.json().get("data")
