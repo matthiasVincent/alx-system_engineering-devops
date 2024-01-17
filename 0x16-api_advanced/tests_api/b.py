@@ -1,6 +1,6 @@
 import requests
 
-b = "https://www.reddit.com/"
+b = "https://oauth.reddit.com/"
 
 data = {'grant_type': 'password',
                'username': 'matthiasVinco',
