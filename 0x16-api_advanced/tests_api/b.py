@@ -7,7 +7,8 @@ data = {'grant_type': 'password',
                'password': 'Matthias@28908'
 }
 
-r = requests.get(b + '/r/programming/about.json', data=data, 
+auth = requests.auth.HTTPBasicAuth('matthiasVinco', 'Matthias@28908')
+r = requests.get(b + '/r/programming/about.json', auth=auth, 
 headers = {'User-Agent': 'Api-advanced by matthiasVinco'}, allow_redirects=False)
 
 d = r.json()

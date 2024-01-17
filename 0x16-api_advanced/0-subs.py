@@ -9,13 +9,9 @@ def number_of_subscribers(subreddit):
     headers = {
         "User-Agent": "Api-advanced by matthiasVincent"
     }
-    data = {
-            'grant_type': 'password',
-            'username': 'matthiasVinco',
-            'password': 'Matthias@28908'
-            }
+    auth = requests.auth.HTTPBasicAuth('matthiasVinco', 'Matthias@28908')
     response = requests.get(
-            url, data=data,
+            url, auth=auth,
             headers=headers, allow_redirects=False
             )
     if response.status_code == 404:
