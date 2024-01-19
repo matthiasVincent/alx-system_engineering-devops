@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Function to query subscribers on a given Reddit subreddit."""
 import requests
+import sys
 
 
 def number_of_subscribers(subreddit):
@@ -17,4 +18,8 @@ def number_of_subscribers(subreddit):
     if response.status_code == 404:
         return 0
     results = response.json().get("data")
+    print('OK')
     return results.get("subscribers")
+
+
+number_of_subscribers(sys.argv[1])
